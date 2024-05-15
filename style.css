@@ -198,4 +198,83 @@ p{
     transition: 0.25s;
 }
 
+.adjust{
+    position: relative;
+    min-height: 100vh;
+    padding: 0 40px;
+    padding-top: 80px;
+    background: var(--white);
+    color: var(--black);
+    display: inline-block;
+}
 
+
+.title{
+    width: 100%;
+    text-align: center;
+}
+
+.title h2{
+    position: relative;
+    font-size: 1.2em;
+    /* margin-bottom: 30px; */
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 0, 0, 0.167);
+    transform: rotate(35deg);
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 94, 255, 0.167);
+    border-radius: 50%;
+}
+
+.shapes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-top: -35px; */
+}
+
+/* .title h2::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 50px;
+    height: 1px;
+    background: var(--black);
+} */
+
+.about .content{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 40px; */
+}
+
+.about .content .textBox{
+    width: 49%;
+    min-width: 49%;
+}
+
+.about .content .imgBx{
+    margin-left: 40px;
+}
+
+.about .content .imgBx img{
+    max-width: 100%;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid rgba(248, 244, 3, 0.345);
+	border-bottom: 25px solid transparent;
+}
