@@ -127,7 +127,7 @@ body {
   font-size: 1.4em;
 }
 
-.main .topbar .toggle {
+.main .topbar .toggle p {
   position: relative;
   width: 60px;
   height: 60px;
@@ -137,6 +137,11 @@ body {
   align-items: center;
   font-size: 1.4em;
   color: var(--black);
+  opacity: 0.5;
+}
+
+.main .topbar .toggle p:hover {
+    opacity: 1;
 }
 
 section {
@@ -259,6 +264,7 @@ p {
 .about .content {
   display: flex;
   justify-content: center;
+  text-align: justify;
 }
 
 .about .content .textBox {
