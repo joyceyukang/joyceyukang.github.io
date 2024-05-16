@@ -263,28 +263,28 @@ p {
 
 .about .content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   text-align: justify;
 }
 
 .about .content .textBox {
-  width: 60%;
+  width: 55%;
   min-width: 49%;
   padding: 10px;
 }
 
-.about .content .imgBx {
-  margin-left: 40px;
-}
-
 .about .content .imgBx img {
   max-width: 100%;
+  height: 350px;
 }
 
 .projects .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
 }
 
 .projects .content .textBox {
@@ -293,6 +293,7 @@ p {
   width: 60%;
   min-width: 60%;
   padding: 10px;
+  text-align: justify;
 }
 
 .projects .content .imgBx {
