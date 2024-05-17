@@ -44,8 +44,8 @@ body {
   font-size: 1.2em;
 }
 .navigation .exit p:hover {
-    opacity: 1;
-    cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .navigation.active {
@@ -141,7 +141,7 @@ body {
 }
 
 .main .topbar .toggle p:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 section {
@@ -228,7 +228,9 @@ p {
   padding-top: 80px;
   background: var(--white);
   color: var(--black);
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title {
@@ -267,6 +269,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: justify;
+  margin-top: 50px;
 }
 
 .about .content .textBox {
@@ -291,7 +294,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 60%;
-  /* min-width: 60%; */
+  min-width: 60%;
   padding: 10px;
   text-align: justify;
   margin-bottom: 30px;
@@ -303,14 +306,14 @@ p {
 }
 
 .projects .content .imgBx h4 {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.1em;
 }
 
 .projects .content img {
   max-width: 100%;
-  height: 275px;
+  height: 350px;
   border: black solid 1px;
 }
 
@@ -337,17 +340,59 @@ p {
 }
 
 .skills .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-  }
-  
-  .skills .content .textBox {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    min-width: 60%;
-    padding: 10px;
-    text-align: justify;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.skills .content .textBox {
+  width: 100%;
+  min-width: 49%;
+  padding: 10px;
+  text-align: center;
+}
+
+.trapezoid {
+  border-bottom: 30px solid rgba(3, 248, 105, 0.168);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 90px;
+}
+
+.skills .oval {
+  height: 60px;
+  width: 40px;
+  background-color: rgba(248, 130, 3, 0.168);
+  border-radius: 50%;
+  margin-right: -25px;
+}
+
+.rectangle {
+  height: 40px;
+  width: 80px;
+  background-color: rgba(240, 3, 248, 0.168);
+  margin-left: -25px;
+}
+
+.diamond {
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-bottom-color: rgba(3, 244, 248, 0.168);
+  position: relative;
+  top: -40px;
+}
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 40px;
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-top-color: rgba(3, 244, 248, 0.168);
+}
