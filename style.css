@@ -387,7 +387,7 @@ p {
   top: -40px;
 }
 .diamond:after {
-  content: '';
+  content: "";
   position: absolute;
   left: -40px;
   top: 40px;
