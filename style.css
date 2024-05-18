@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -29,15 +30,14 @@ body {
   background: var(--white2);
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   transition: width 0.25s;
   z-index: 100;
 }
 
 .navigation .exit p {
-  margin: 15px 15px 0 0;
   color: var(--black);
   font-weight: 500;
   opacity: 0.5;
@@ -198,26 +198,27 @@ p {
 }
 
 .socialMedia {
-  position: absolute;
-  bottom: 20px;
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socialMedia li {
   list-style: none;
 }
 .socialMedia li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.05);
-  margin: 5px;
+  width: 80px;
+  height: 80px;
+  margin: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: var(--black);
-  font-size: 1.2em;
+  font-size: 2em;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 .socialMedia li a:hover {
@@ -295,6 +296,7 @@ p {
   align-items: start;
   justify-items: center;
   margin-top: 50px;
+  width: 75%;
 }
 
 .projects .content .textBox {
@@ -349,19 +351,23 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: justify;
   margin-top: 50px;
-}
-
-.skills .content .textBox {
-  width: 100%;
+  width: 80%;
   min-width: 49%;
-  padding: 10px;
-  text-align: center;
 }
 
 .skills .content .textBox {
-  letter-spacing: 1em;
+  width: 80%;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills .content .textBox .icons img {
+  margin: 15px;
 }
 
 .trapezoid {
@@ -722,7 +728,13 @@ p {
   flex-direction: column;
 }
 
-.contact .contactForm {
+.contact .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .contact .contactForm {
   position: relative;
   width: 100%;
   max-width: 700px;
@@ -761,3 +773,16 @@ p {
   font-size: 14px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.contact .contactForm .row2 input[type="submit"] {
+  background: var(--black2);
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 150px;
+  border: none;
+  border-radius: 5px;
+} */
