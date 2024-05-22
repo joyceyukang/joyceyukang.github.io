@@ -334,11 +334,22 @@ p {
   display: flex;
   flex-direction: row;
   margin-bottom: 5px;
+  align-items: center;
 }
+
 .projects .content .textBox .project-link a {
   padding: 5px 5px 5px 0;
   text-decoration: none;
   color: var(--black);
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+.projects .content .textBox .project-link p {
+  padding: 5px 5px 5px 0;
+}
+
+.projects .content .textBox .project-link a:hover {
+  opacity: 1;
 }
 
 .triangle-left {
